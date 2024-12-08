@@ -1,0 +1,18 @@
+<h2>Available Drives in My Company</h2>
+
+<div>
+  <input type="text" placeholder="Drive Name" [(ngModel)]="drive.name"><br>
+  <input type="date" placeholder="Drive Date" [(ngModel)]="drive.date"><br>
+  <input type="text" placeholder="Description" [(ngModel)]="drive.description"><br>
+  <button (click)="addDrive()">Add Drive</button><br>
+</div>
+
+
+<h3>Added Drives</h3>
+<ul>
+  <li *ngFor="let drive of newDrives">
+    {{ drive.name }} - {{ drive.date }}: {{ drive.description }}
+  </li>
+</ul>
+
+<button (click)="saveDrives()">Save All Drives</button>

@@ -1,0 +1,14 @@
+<b>DASHBOARD</b> <br><br>
+
+
+Welcome {{StudentName}} <br>
+
+<button (click)="changeWhatToShow(1)">Personal Data</button>  &nbsp;
+<button (click)="changeWhatToShow(2)">Apply Drive</button>
+
+<div *ngIf="whatToShow==1">
+    <app-personaldata></app-personaldata>
+</div>
+<div *ngIf="whatToShow==2">
+    <app-driveapply></app-driveapply>
+</div>

@@ -1,0 +1,116 @@
+/* Apply grey background to the entire page */
+body {
+  background-color: #e0e0e0; /* Light grey background */
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Keep specific sections with a white background for contrast */
+.home-container {
+  background-color: #ffffff; /* White background for the main container if needed */
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: white; /* White navbar for contrast */
+  border-bottom: 1px solid #ccc; /* Slight border to differentiate navbar */
+}
+
+/* Logo styling */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Adjust the spacing between the logo and the text */
+.logo img {
+  width: 100px;
+  margin-right: 20px;
+}
+
+.logo span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-left: 20px;
+}
+
+/* Navigation button styles */
+.nav-buttons button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #ff5733;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Hero section with grey background */
+.hero-section {
+  text-align: center;
+  padding: 100px 0;
+  background-color: #f0f0f0; /* Lighter grey for the hero section */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Hero section headers and paragraph */
+.hero-section h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333; /* Dark grey text for readability */
+}
+
+.hero-section p {
+  font-size: 18px;
+  color: #666; /* Medium grey for paragraph text */
+}
+
+/* Search bar styles */
+.search-bar {
+  margin-top: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9; /* Very light grey for input fields */
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Jobs, companies, services section styling */
+.jobs-services-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.jobs-services-section div {
+  margin: 0 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.jobs-services-section div:hover {
+  color: #007bff; /* Highlight on hover */
+  cursor: pointer;
+}

@@ -1,0 +1,13 @@
+<b>Recuiter Dashboard </b> <br><br>
+
+Welcome {{this.app.recuiterName}} <br><br>
+
+<button (click)="changeWhatToShow(1)">Company Data</button>  &nbsp;
+<button (click)="changeWhatToShow(2)">Add Drives</button>
+
+<div *ngIf="whatToShow==1">
+    <app-companydata></app-companydata>
+</div>
+<div *ngIf="whatToShow==2">
+    <app-adddrives></app-adddrives>
+</div>

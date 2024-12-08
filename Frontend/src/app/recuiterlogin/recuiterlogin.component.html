@@ -1,0 +1,16 @@
+
+
+<div *ngIf="whatToShow==0" class="login-container"> 
+  <b>  <p>Recuiter Login</p></b>
+    Email / Mobile: <input type="text" [(ngModel)]="username"><br>
+    Password: <input type="password" [(ngModel)]="password"><br>
+    <button (click)="login(1)">login</button>
+    <br><br>
+    <h6>Not Register Yet? Please Register..</h6>
+    <button routerLink="/recreg">Register</button>
+    </div> 
+    
+    <div *ngIf="whatToShow==1">
+        <app-recuiterdashboard></app-recuiterdashboard>
+    </div> 
+    
